@@ -1,10 +1,98 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    --background-main: #290059;
-    --button-color: #004AAD;
-    --text-color: #1E0042;
+  --background-main: #290059;
+  --button-color: #004aad;
+  --text-color: #1e0042;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  background: var(--background-main);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  height: 30vh;
+  text-align: center;
+  color: white;
+}
+h1 {
+  font-size: 4rem;
+}
+p {
+  font-size: 2em;
+}
+
+/* CARDS */
+
+.card-section {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2em;
+}
+.card {
+  height: 23em;
+  width: 15em;
+  background: white;
+  border-radius: 6%;
+  -webkit-border-radius: 6%;
+  -moz-border-radius: 6%;
+  -ms-border-radius: 6%;
+  -o-border-radius: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.card::after {
+  content: "Select Plan";
+  font-size: 1.5rem;
+  color: white;
+  width: 8em;
+  background: var(--button-color);
+  position: absolute;
+  bottom: -7%;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+.card-heading,
+h2,
+span {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.card-heading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.card-heading::after {
+  content: "";
+  width: 60%;
+  height: 1px;
+  background: black;
+  margin-top: 0.5em;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1em;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
