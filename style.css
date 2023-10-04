@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    --background-main: #290059;
+    --button-color: #004AAD;
+    --text-color: #1E0042;
+}
